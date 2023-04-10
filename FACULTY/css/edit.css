@@ -1,0 +1,39 @@
+.block {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .modal-body ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .modal-body h6 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Center modal vertically */
+  .modal-dialog.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Add fade-in and fade-out animations to the modal */
+  .modal.fade .modal-dialog {
+    transition: opacity 0.3s ease-out;
+  }
+  
+  .modal.fade .modal-dialog.modal-dialog-centered {
+    transition: transform 0.3s ease-out;
+  }
+  
+  .modal.show .modal-dialog {
+    opacity: 1;
+  }
+  
+  .modal.show .modal-dialog.modal-dialog-centered {
+    transform: translateY(0);
+  }
+  
